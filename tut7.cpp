@@ -26,9 +26,24 @@ int main(){
     // cout<<"The size of 34.4 is"<<sizeof(34.4L)<<endl;
 
     //reference variable
-    float x = 455;
-    float & y = x;//y is reference to x
-    cout<<x<<endl;
-    cout<<y<<endl;
+    // float x = 455;
+    // float & y = x;//y is reference to x
+    // cout<<x<<endl;
+    // cout<<y<<endl;
+
+    //type casting
+
+    int a = 45;
+    float b = 45.46;
+    cout<<"The value of a is "<<(float)a<<endl;
+    cout<<"The value of a is "<<float(a)<<endl;//same
+
+    cout<<"The value of b is "<<(int)b<<endl;
+    cout<<"The value of b is "<<int(b)<<endl;
+
+    int c = int(b);
+    cout<<"The expresion is "<<a+b<<endl;
+    cout<<"The expresion is "<<a+int(b)<<endl;
+    cout<<"The expresion is "<<a+(int)b<<endl;
     return 0;
 }
